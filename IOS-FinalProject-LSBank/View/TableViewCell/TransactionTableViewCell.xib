@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="IOS_FinalProject_LSBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account holder " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSE-We-zkF">
+                        <rect key="frame" x="20" y="25" width="410" height="21"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7IS-Fs-9NI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" systemColor="linkColor"/>
+                        <color key="highlightedColor" systemColor="linkColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA1-l4-96o">
+                        <rect key="frame" x="40" y="136" width="370" height="24"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" systemColor="linkColor"/>
+                        <color key="highlightedColor" systemColor="linkColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOZ-64-phO">
+                        <rect key="frame" x="343" y="104" width="74" height="24"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="jel-Hc-AXt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="highlightedColor" systemColor="linkColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ0-Po-P17">
+                        <rect key="frame" x="20" y="79" width="122" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="p2M-io-aV9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.square.dashed" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Psz-62-hc7">
+                        <rect key="frame" x="340" y="37" width="70" height="43"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45.5" id="GJZ-6h-3EX"/>
+                            <constraint firstAttribute="width" constant="70" id="Vyl-ii-ven"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="HOZ-64-phO" secondAttribute="trailing" constant="13" id="1Pe-Z1-pMt"/>
+                    <constraint firstAttribute="trailing" secondItem="Psz-62-hc7" secondAttribute="trailing" constant="40" id="AOL-5k-bd4"/>
+                    <constraint firstItem="aJ0-Po-P17" firstAttribute="top" secondItem="RSE-We-zkF" secondAttribute="bottom" constant="33" id="O7R-Xe-rj5"/>
+                    <constraint firstItem="RSE-We-zkF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WTA-jy-xBJ"/>
+                    <constraint firstItem="TA1-l4-96o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="aaW-tV-4I4"/>
+                    <constraint firstAttribute="trailing" secondItem="RSE-We-zkF" secondAttribute="trailing" constant="20" id="fFE-6e-gZr"/>
+                    <constraint firstItem="aJ0-Po-P17" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gvi-TJ-js4"/>
+                    <constraint firstItem="TA1-l4-96o" firstAttribute="top" secondItem="RSE-We-zkF" secondAttribute="bottom" constant="90" id="lKT-Fo-ubM"/>
+                    <constraint firstItem="TA1-l4-96o" firstAttribute="top" secondItem="HOZ-64-phO" secondAttribute="bottom" constant="8" symbolic="YES" id="m6c-WC-Cm5"/>
+                    <constraint firstItem="RSE-We-zkF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="nOG-a4-ZpP"/>
+                    <constraint firstItem="Psz-62-hc7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="qf8-oh-OqV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TA1-l4-96o" secondAttribute="trailing" constant="20" id="skv-4U-VSb"/>
+                    <constraint firstItem="HOZ-64-phO" firstAttribute="top" secondItem="Psz-62-hc7" secondAttribute="bottom" constant="22.5" id="t71-Eg-kbF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgType" destination="Psz-62-hc7" id="0CH-aM-z62"/>
+                <outlet property="lblAccountHolder" destination="RSE-We-zkF" id="0dO-vf-dnD"/>
+                <outlet property="lblAmount" destination="HOZ-64-phO" id="0LP-qP-GQi"/>
+                <outlet property="lblDateAndTime" destination="aJ0-Po-P17" id="hV2-W2-LfK"/>
+                <outlet property="lblMessage" destination="TA1-l4-96o" id="YIF-Db-33P"/>
+            </connections>
+            <point key="canvasLocation" x="263.768115942029" y="111.16071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="questionmark.square.dashed" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
